@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    .btn_1:hover{
+        /* transform: scale(2px); */
+        background-color: rgb(227, 141, 239);
+        /* transition: all 0.3s ease-in-out 1ms;
+        font-size: 20px; */
+        transform: translatey(10px);
+    }
+  @keyframes move{
+    from{
+        transform: translateX(0px);
+        background-color: #F7FBE1;
+    }
+    to{
+        text-replace: translatex(200px);
+        background-color: #8B4513;
+    }
+  }
+    #box_1{
+    height: 600px;
+    width:100vw;
+    background-color: #F7F8EB;
+    }
+    #top{
+        height: 50px;
+        width: 90%;
+        background-color: #F7FBE1;
+        border-radius: 20px;
+        margin-left: 50px;
+        position:absolute;
+        top:30px; 
+        display:flex;
+        justify-content: space-evenly;
+        align-items: center;
+        
+    }
+    .left{
+        
+        color:black;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        list-style-type: none;
+        padding: 7px;
+        gap:50px;
+        
+    }
+    .btn_1{
+        padding: 10px;
+        border-radius: 20px;
+        background-color: #8B4513;
+        color: white;
+        border:none;
+        cursor: pointer;
+    }
+    #bottom{
+        height: 470px;
+        width:104vw;
+        background-color: cadetblue;
+        position:relative;
+        top:45px;
+        right:50px;
+        background-image: url("cass.png");
+        background-size: cover;
+        background-position: center;  
+        position:relative;
+        top:110px;  
+     } 
+     p{
+        height:200px;
+        width:400px;
+        background-color: #F7FBE1;
+        position: relative;
+        top:150px;
+        left:500px;
+        font-family: cursive;
+        font-size: 50px;
+        padding-left: 30px;
+        border-radius: 20px;
+    }
+     .btn_2{
+        padding: 10px;
+        position: relative;
+        top:-20px;
+        left:120px;
+        border-radius: 10px;
+        border: none;
+        background-color:#8B4513;
+        color: white;
+     }
+      #box_2{
+    height: 550px;
+    width:100vw;
+    background-color: #F7F8EB;
+    }
+    h1{
+        padding-left: 550px;
+        padding-top: 30px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family: cursive;
+    }
+    span{
+        padding-left: 200px; 
+    }
+    #boxes{
+    display: flex;
+    justify-content: center;   /* center boxes */
+    gap: 50px;                 /* spacing between boxes */
+    margin-top: 40px;
+    }
+    .box{
+        height: 350px;
+        width: 250px;
+        background-color: #F7FBE1;
+        animation: move 3s ease-in-out 1s 5 ;
+       
+    }
+    
+    .pic{
+        height: 180px;
+        width:250px;
+        
+    }
+    .pic_3{
+        background-image: url("cake.png");
+        background-size: cover;
+    }
+    .pic_2{
+        background-image: url("pastry.png");
+        background-size: contain;
+    }
+    .pic_1{
+        background-image: url("bread.png");
+        background-size: cover;
+    }
+    #order{
+        background-color: #8B4513;
+        color: white;
+        border-radius: 10px;
+        padding:8px;
+        border: none;
+        margin-top:10px;
+        margin-left: 80px;
+    }
+    .text{
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+    h3{
+        padding-left: 40px;
+    }
+</style>
+<body>
+    <div>
+        <div id="box_1">
+            <div id="top">
+                <div class="left">BAKERY</div> 
+                <div class="right">
+                    <ul>
+                        <li> HOME</li>
+                        <li>ABOUT US</li>
+                        <li>MEAL</li>
+                        <li>CONTACT US</li>
+                        <button class="btn_1"> ORDER NOW </button>
+                    </ul>
+                </div>
+            </div>
+            <div id="bottom">
+                <p>Freshly Baked, just for You!
+                    <button class="btn_2"> Order Now</button>
+                </p>
+            </div>
+        </div>
+        <div id="box_2">
+            <h1> Why Choose Us?</h1> <br>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo tempore minima est volup officia aut quidem repellendus. Temporibus<br><br></span>
+            <div id="boxes">
+                <div class="box box_1">
+                    <div class="pic pic_1"></div>
+                   <div class="text text_1"> <h3>Artian Breads</h3><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, vel?</div>
+                   <button id="order">Order Bakery</button>
+                </div>
+                <div class="box box_2">
+                    <div class="pic pic_2"></div>
+                   <div class="text text_2"><h3>Sweet Pastries</h3><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, vel?</div>
+                   <button id="order">Order Bakery</button>
+                </div>
+                <div class="box box_3">
+                    <div class="pic pic_3"></div>
+                   <div class="text text_3"><h3>Custom Cakes</h3><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, vel?</div>
+                   <button id="order">Order Bakery</button>
+                </div>
+            </div>
+        </div>
+        <div  id="box_3">
+
+        </div>
+    </div>
+</body>
+</html>
